@@ -1,0 +1,99 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="2800" viewBox="0 0 1600 2800">
+  <rect width="1600" height="2800" fill="#F4F6F8"/>
+  <style>
+    .screen{fill:#FFFFFF;stroke:#D0D7DE;stroke-width:3}.bar{fill:#F3F4F6}.ink{fill:#24292F}.muted{fill:#4B5563}.line{stroke:#2563EB;stroke-width:3;stroke-linecap:round}.soft{fill:#F6F8FA;stroke:#2563EB;stroke-width:2}.card{fill:#FFFFFF;stroke:#7C3AED;stroke-width:2}.nav{font:22px Consolas,monospace;letter-spacing:1px}.h1{font:bold 38px Consolas,monospace}.h2{font:bold 27px Consolas,monospace}.body{font:20px Consolas,monospace}.small{font:17px Consolas,monospace}.caption{font:16px Consolas,monospace;letter-spacing:2px}.dot{fill:#2563EB}.code{font:18px Consolas,monospace;fill:#6B7280}.keyword{fill:#7C3AED}.string{fill:#F97316}.func{fill:#2563EB}.type{fill:#7C3AED}.variable{fill:#1D4ED8}.number{fill:#F97316}.plain{fill:#24292F}.comment{fill:#6B7280}
+  </style>
+  <text x="80" y="65" class="h2"><tspan class="keyword">const</tspan><tspan class="variable">&#160;portfolio</tspan><tspan class="plain">&#160;=&#160;</tspan><tspan class="string">"Julia"</tspan></text>
+  <text x="80" y="99" class="code">// tela sobre</text>
+  <rect x="80" y="125" width="1440" height="760" rx="12" class="screen"/>
+  <path d="M92 125 H1508 Q1520 125 1520 137 V177 H80 V137 Q80 125 92 125" class="bar"/>
+  <circle cx="112" cy="151" r="7" fill="#F97316"/><circle cx="137" cy="151" r="7" fill="#7C3AED"/><circle cx="162" cy="151" r="7" fill="#2563EB"/>
+  <rect x="590" y="137" width="420" height="28" rx="14" fill="#E5E7EB"/>
+  <text x="716" y="244" text-anchor="middle" class="func nav">sobre()</text>
+  <line x1="672" y1="259" x2="760" y2="259" stroke="#7C3AED" stroke-width="4"/>
+  <text x="884" y="244" text-anchor="middle" class="type nav">projetos[]</text>
+  <circle cx="470" cy="430" r="118" fill="#F3E8FF" stroke="#7C3AED" stroke-width="3"/>
+  <circle cx="470" cy="397" r="38" fill="none" class="line"/>
+  <path d="M399 500 Q470 438 541 500" fill="none" class="line"/>
+  <text x="470" y="578" text-anchor="middle" class="comment caption"># sua_foto</text>
+  <text x="702" y="365" class="h1"><tspan class="keyword">class</tspan><tspan class="type">&#160;Julia</tspan><tspan class="plain">:</tspan></text>
+  <line x1="703" y1="409" x2="1193" y2="409" class="line"/>
+  <line x1="703" y1="442" x2="1240" y2="442" class="line"/>
+  <line x1="703" y1="475" x2="1162" y2="475" class="line"/>
+  <line x1="703" y1="508" x2="1080" y2="508" class="line"/>
+  <text x="703" y="550" class="comment small"># desenvolvedora em construção • curiosa por tecnologia</text>
+  <text x="470" y="650" text-anchor="middle" class="h2"><tspan class="variable">contatos</tspan><tspan class="plain">&#160;=&#160;[</tspan></text>
+  <!-- ícones das redes -->
+  <rect x="355" y="680" width="70" height="70" rx="18" fill="#F97316"/>
+  <rect x="370" y="698" width="40" height="28" rx="3" fill="none" stroke="#FFFFFF" stroke-width="4"/>
+  <path d="M371 701 L390 716 L409 701" fill="none" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="435" y="680" width="70" height="70" rx="18" fill="#2563EB"/>
+  <text x="470" y="729" text-anchor="middle" fill="#FFFFFF" style="font:bold 34px Arial,sans-serif">in</text>
+  <rect x="515" y="680" width="70" height="70" rx="18" fill="#7C3AED"/>
+  <path d="M550 698 C535 698 526 709 526 722 C526 732 532 739 541 742 C542 742 543 741 543 740 V735 C537 736 534 732 533 729 C532 727 530 726 528 725 C532 724 535 726 537 729 C540 732 544 731 545 730 C546 727 547 726 548 725 C539 724 533 719 533 712 C533 709 534 706 536 704 C535 701 536 698 537 696 C541 696 545 698 547 700 C552 699 556 699 561 700 C563 698 567 696 571 696 C572 698 573 701 572 704 C574 706 575 709 575 712 C575 719 569 724 560 725 C562 727 563 730 563 734 V740 C563 741 564 742 565 742 C574 739 580 732 580 722 C580 709 570 698 550 698 Z" fill="#FFFFFF"/>
+  <text x="470" y="780" text-anchor="middle" class="plain h2">]</text>
+  <text x="80" y="974" class="code">// lista de projetos por ano</text>
+  <rect x="80" y="1000" width="1440" height="820" rx="12" class="screen"/>
+  <path d="M92 1000 H1508 Q1520 1000 1520 1012 V1052 H80 V1012 Q80 1000 92 1000" class="bar"/>
+  <circle cx="112" cy="1026" r="7" fill="#F97316"/><circle cx="137" cy="1026" r="7" fill="#7C3AED"/><circle cx="162" cy="1026" r="7" fill="#2563EB"/>
+  <rect x="590" y="1012" width="420" height="28" rx="14" fill="#E5E7EB"/>
+  <text x="716" y="1119" text-anchor="middle" class="func nav">sobre()</text>
+  <text x="884" y="1119" text-anchor="middle" class="type nav">projetos[]</text>
+  <line x1="827" y1="1134" x2="941" y2="1134" stroke="#7C3AED" stroke-width="4"/>
+  <!-- Seletor horizontal de ano -->
+  <rect x="300" y="1190" width="1000" height="74" rx="37" class="soft"/>
+  <rect x="370" y="1201" width="170" height="52" rx="26" fill="#DDD6FE"/>
+  <text x="455" y="1237" text-anchor="middle" fill="#24292F" class="body">2026</text>
+  <text x="650" y="1238" text-anchor="middle" class="muted body">2027</text>
+  <text x="820" y="1238" text-anchor="middle" class="muted body">2028</text>
+  <text x="1010" y="1238" text-anchor="middle" class="muted body">2029</text>
+  <text x="1180" y="1238" text-anchor="middle" class="muted body">2030</text>
+  <text x="800" y="1298" text-anchor="middle" class="comment small"># selecione o ano</text>
+
+  <!-- Somente projetos do ano selecionado -->
+  <text x="230" y="1380" class="number h1">2026</text>
+  <line x1="230" y1="1401" x2="325" y2="1401" stroke="#F97316" stroke-width="4"/>
+  <g><rect x="230" y="1440" width="300" height="260" rx="8" class="card"/><rect x="250" y="1460" width="260" height="150" fill="#EFF6FF" stroke="#2563EB" stroke-width="2"/><path d="M270 1585 L330 1525 L385 1565 L430 1510 L490 1585" fill="none" class="line"/><text x="250" y="1649" class="func h2">Projeto()</text><text x="250" y="1681" class="string small">"descrição"</text></g>
+  <g><rect x="610" y="1440" width="300" height="260" rx="8" class="card"/><rect x="630" y="1460" width="260" height="150" fill="#F3E8FF" stroke="#7C3AED" stroke-width="2"/><path d="M650 1585 L710 1525 L765 1565 L810 1510 L870 1585" fill="none" class="line"/><text x="630" y="1649" class="type h2">Projeto()</text><text x="630" y="1681" class="comment small"># descrição</text></g>
+  <g><rect x="990" y="1440" width="300" height="260" rx="8" class="card"/><rect x="1010" y="1460" width="260" height="150" fill="#FFF1E6" stroke="#F97316" stroke-width="2"/><path d="M1030 1585 L1090 1525 L1145 1565 L1190 1510 L1250 1585" fill="none" class="line"/><text x="1010" y="1649" class="keyword h2">Projeto()</text><text x="1010" y="1681" class="variable small">descricao: str</text></g>
+
+  <!-- Indicação de rolagem vertical -->
+  <line x1="1435" y1="1355" x2="1435" y2="1700" stroke="#E5E7EB" stroke-width="8" stroke-linecap="round"/>
+  <line x1="1435" y1="1365" x2="1435" y2="1465" stroke="#2563EB" stroke-width="8" stroke-linecap="round"/>
+  <text x="800" y="1760" text-anchor="middle" class="muted body">Role para baixo para ver mais projetos de 2026 ↓</text>
+
+  <!-- DETALHE DO PROJETO -->
+  <text x="80" y="1908" class="body"><tspan class="keyword">def</tspan><tspan class="func">&#160;abrir_projeto</tspan><tspan class="plain">(</tspan><tspan class="variable">projeto</tspan><tspan class="plain">):</tspan></text>
+  <rect x="80" y="1935" width="1440" height="790" rx="12" class="screen"/>
+  <path d="M92 1935 H1508 Q1520 1935 1520 1947 V1987 H80 V1947 Q80 1935 92 1935" class="bar"/>
+  <circle cx="112" cy="1961" r="7" fill="#F97316"/><circle cx="137" cy="1961" r="7" fill="#7C3AED"/><circle cx="162" cy="1961" r="7" fill="#2563EB"/>
+  <rect x="590" y="1947" width="420" height="28" rx="14" fill="#E5E7EB"/>
+
+  <text x="716" y="2054" text-anchor="middle" class="func nav">sobre()</text>
+  <text x="884" y="2054" text-anchor="middle" class="type nav">projetos[]</text>
+  <line x1="827" y1="2069" x2="941" y2="2069" stroke="#7C3AED" stroke-width="4"/>
+
+  <text x="180" y="2145" class="comment body">// voltar para projetos</text>
+  <text x="180" y="2220" class="h1"><tspan class="variable">projeto</tspan><tspan class="plain">[</tspan><tspan class="string">"nome"</tspan><tspan class="plain">]</tspan></text>
+  <text x="180" y="2256" class="body"><tspan class="keyword">categoria</tspan><tspan class="plain"> · </tspan><tspan class="number">2026</tspan></text>
+
+  <rect x="180" y="2305" width="700" height="310" rx="8" class="soft"/>
+  <path d="M230 2565 L380 2415 L510 2510 L650 2365 L830 2565" fill="none" class="line"/>
+  <text x="530" y="2470" text-anchor="middle" class="muted caption">IMAGEM PRINCIPAL DO PROJETO</text>
+
+  <text x="970" y="2333" class="func h2">README.md</text>
+  <line x1="970" y1="2373" x2="1355" y2="2373" class="line"/>
+  <line x1="970" y1="2405" x2="1315" y2="2405" class="line"/>
+  <line x1="970" y1="2437" x2="1360" y2="2437" class="line"/>
+  <line x1="970" y1="2469" x2="1260" y2="2469" class="line"/>
+
+  <text x="970" y="2520" class="h2"><tspan class="variable">tecnologias</tspan><tspan class="plain"> = [ ]</tspan></text>
+  <rect x="970" y="2545" width="105" height="42" rx="21" fill="#DDD6FE"/><text x="1022" y="2572" text-anchor="middle" fill="#24292F" class="small">Tag</text>
+  <rect x="1090" y="2545" width="105" height="42" rx="21" fill="#FED7AA"/><text x="1142" y="2572" text-anchor="middle" fill="#24292F" class="small">Tag</text>
+  <rect x="1210" y="2545" width="105" height="42" rx="21" fill="#BFDBFE"/><text x="1262" y="2572" text-anchor="middle" fill="#24292F" class="small">Tag</text>
+
+  <rect x="970" y="2625" width="180" height="52" rx="6" fill="#2563EB"/>
+  <text x="1060" y="2658" text-anchor="middle" fill="#FFFFFF" class="body">executar()</text>
+  <rect x="1170" y="2625" width="180" height="52" rx="6" fill="#F97316"/>
+  <text x="1260" y="2658" text-anchor="middle" fill="#24292F" class="body">codigo()</text>
+</svg>

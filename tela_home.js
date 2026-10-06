@@ -12,8 +12,7 @@ document.addEventListener("DOMContentLoaded", function () {
     let temporizador;
     let temporizadorDigitacao;
 
-    // Guarda os textos separadamente para manter as cores de "Julia",
-    // "meu" e "portfólio".
+    // Guarda os textos sem perder as cores dos spans.
     const partes = [];
 
     for (const elemento of mensagem) {
@@ -67,10 +66,10 @@ document.addEventListener("DOMContentLoaded", function () {
                 }
             }
 
-            temporizadorDigitacao = setTimeout(escreverLetra, 12);
+            temporizadorDigitacao = setTimeout(escreverLetra, 8);
         }
 
-        temporizadorDigitacao = setTimeout(escreverLetra, 250);
+        temporizadorDigitacao = setTimeout(escreverLetra, 100);
     }
 
     const estavaLigado =
@@ -83,8 +82,8 @@ document.addEventListener("DOMContentLoaded", function () {
         botaoLigar.setAttribute("aria-label", "Desligar notebook");
     }
 
-    // Ao abrir a página, a mensagem permanece completa.
-    // A digitação só começa quando o botão é usado para ligar a tela.
+    // Na abertura da página, a mensagem já está completa.
+    // A digitação só acontece após desligar e ligar pelo botão.
 
     botaoLigar.addEventListener("click", function () {
         const estaLigado = notebook.classList.contains("ligado");

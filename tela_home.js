@@ -1,7 +1,9 @@
 document.addEventListener("DOMContentLoaded", function () {
     const notebook = document.querySelector("#notebook");
     const botaoLigar = document.querySelector("#botao-ligar");
-    const mensagem = document.querySelectorAll(".cumprimento h1, .cumprimento h2");
+    const mensagem = document.querySelectorAll(
+        ".cumprimento h1, .cumprimento h2"
+    );
 
     if (notebook === null || botaoLigar === null) {
         return;
@@ -10,7 +12,8 @@ document.addEventListener("DOMContentLoaded", function () {
     let temporizador;
     let temporizadorDigitacao;
 
-    // Guarda cada parte do texto separadamente para preservar as cores dos spans.
+    // Guarda os textos separadamente para manter as cores de "Julia",
+    // "meu" e "portfólio".
     const partes = [];
 
     for (const elemento of mensagem) {
@@ -64,11 +67,10 @@ document.addEventListener("DOMContentLoaded", function () {
                 }
             }
 
-            temporizadorDigitacao = setTimeout(escreverLetra, 45);
+            temporizadorDigitacao = setTimeout(escreverLetra, 12);
         }
 
-        // Espera a animação da tela ligar antes de começar a escrever.
-        temporizadorDigitacao = setTimeout(escreverLetra, 700);
+        temporizadorDigitacao = setTimeout(escreverLetra, 250);
     }
 
     const estavaLigado =
@@ -79,14 +81,13 @@ document.addEventListener("DOMContentLoaded", function () {
 
         botaoLigar.setAttribute("aria-pressed", "true");
         botaoLigar.setAttribute("aria-label", "Desligar notebook");
-    } else if (notebook.classList.contains("ligado")) {
-        // Anima também na primeira abertura, caso o HTML já comece ligado.
-        iniciarDigitacao();
     }
 
+    // Ao abrir a página, a mensagem permanece completa.
+    // A digitação só começa quando o botão é usado para ligar a tela.
+
     botaoLigar.addEventListener("click", function () {
-        const estaLigado =
-            notebook.classList.contains("ligado");
+        const estaLigado = notebook.classList.contains("ligado");
 
         clearTimeout(temporizador);
 

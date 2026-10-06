@@ -1,0 +1,354 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    background-color: #F6F8FA;
+    font-family: "Syne Mono", monospace;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+}
+
+.notebook {
+    width: min(1180px, 70vw);
+}
+
+.moldura-monitor {
+    padding: 16px 16px 45px;
+    background-color: white;
+    border: 1px solid #D8D3DF;
+    border-radius: 30px 30px 18px 18px;
+    box-shadow: 0 22px 35px rgba(61, 46, 88, 0.18);
+    position: relative;
+}
+
+.tela-notebook {
+    aspect-ratio: 16 / 9;
+    padding: 6px;
+    background-color: #161922;
+    border: 2px solid #D3CDD9;
+    border-radius: 14px;
+    overflow: hidden;
+    position: relative;
+}
+
+.controles-monitor {
+    position: absolute;
+    right: 25px;
+    bottom: 9px;
+    display: flex;
+    align-items: center;
+    gap: 11px;
+}
+
+.base-notebook {
+    position: relative;
+    width: 106%;
+    height: 25px;
+    margin-left: -3%;
+    background: linear-gradient(
+        to bottom,
+        #FFFFFF,
+        #E4E2E9
+    );
+    border: 1px solid #D1CFD6;
+    border-radius: 3px 3px 22px 22px;
+    box-shadow: 0 9px 14px rgba(53, 45, 68, 0.18);
+}
+
+.luz-status {
+    width: 8px;
+    height: 8px;
+    background-color: #B8BBC1;
+    border: 1px solid #9EA1A8;
+    border-radius: 50%;
+    transition: 0.25s;
+}
+
+.notebook.ligado .luz-status {
+    background-color: #22C55E;
+    border-color: #16A34A;
+    box-shadow:
+        0 0 5px #22C55E,
+        0 0 10px rgba(34, 197, 94, 0.6);
+}
+
+.botao-ligar {
+    width: 30px;
+    height: 30px;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #696B72;
+    background: linear-gradient(#FFFFFF, #EAEAEF);
+    border: 1px solid #C8C9CE;
+    border-radius: 50%;
+    font-size: 17px;
+    line-height: 1;
+    cursor: pointer;
+    box-shadow: 0 2px 3px rgba(42, 39, 49, 0.2);
+    transition: 0.2s;
+}
+
+.botao-ligar:hover {
+    color: #7C3AED;
+    transform: scale(1.08);
+}
+
+.botao-ligar:active {
+    transform: scale(0.95);
+}
+
+.apresentacao {
+    width: 100%;
+    height: 100%;
+    min-height: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    background-color: #F6F8FA;
+    border: 2px solid #7C3AED;
+    border-radius: 13px;
+    position: relative;
+    z-index: 1;
+    opacity: 0;
+    transform: scale(0.99);
+    pointer-events: none;
+    transition:
+        opacity 0.5s,
+        transform 0.5s;
+}
+
+.notebook.ligado .apresentacao {
+    opacity: 1;
+    transform: scale(1);
+    pointer-events: auto;
+    transition-delay: 0.35s;
+}
+
+.tela-apagada {
+    position: absolute;
+    inset: 6px;
+    z-index: 2;
+    background: radial-gradient(
+        circle at center,
+        #202631,
+        #11151D 60%,
+        #090B10
+    );
+    border-radius: 14px;
+    opacity: 1;
+    pointer-events: none;
+    transition: opacity 0.35s;
+}
+
+.notebook.ligado .tela-apagada {
+    opacity: 0;
+    transition-delay: 0.25s;
+}
+
+.clarao {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 3;
+    width: 95%;
+    height: 95%;
+    background-color: white;
+    border-radius: 50%;
+    opacity: 0;
+    pointer-events: none;
+    transform:
+        translate(-50%, -50%)
+        scaleX(0.02)
+        scaleY(0.01);
+}
+
+.notebook.iniciando .clarao {
+    animation: ligar-tela 0.7s ease-out;
+}
+
+@keyframes ligar-tela {
+    0% {
+        opacity: 0;
+
+        transform:
+            translate(-50%, -50%)
+            scaleX(0.02)
+            scaleY(0.01);
+    }
+
+    25% {
+        opacity: 1;
+
+        transform:
+            translate(-50%, -50%)
+            scaleX(1)
+            scaleY(0.02);
+    }
+
+    50% {
+        opacity: 0.8;
+
+        transform:
+            translate(-50%, -50%)
+            scaleX(1)
+            scaleY(0.08);
+    }
+
+    100% {
+        opacity: 0;
+
+        transform:
+            translate(-50%, -50%)
+            scaleX(1.05)
+            scaleY(1.05);
+    }
+}
+
+p.ola {
+    color: #4B5563;
+    font-size: 20px;
+    margin-bottom: 50px;
+}
+
+h1 {
+    color: #2563EB;
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+h1 span.nome {
+    color: #F97316;
+}
+
+h2 {
+    color: #000000;
+    font-size: 35px;
+    margin-bottom: 50px;
+}
+
+h2 span.meu {
+    color: #2563EB;
+}
+
+h2 span.portifolio {
+    color: #7C3AED;
+}
+
+p.convite {
+    color: #F97316;
+    font-size: 22px;
+    margin-bottom: 40px;
+}
+
+.navegacao {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin-bottom: 60px;
+}
+
+.navegacao a {
+    width: 150px;
+    height: 55px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid;
+    border-radius: 14px;
+    background-color: white;
+    text-decoration: none;
+    font-size: 18px;
+    transition: 0.2s;
+}
+
+.navegacao .sobre {
+    color: white;
+    background-color: #2563EB;
+}
+
+.navegacao .projetos {
+    color: white;
+    background-color: #F97316;
+}
+
+.navegacao .sobre:hover {
+    color: white;
+    background-color: #BFDBFE;
+    transform: translateY(-3px);
+}
+
+.navegacao .projetos:hover {
+    color: white;
+    background-color: #FED7AA;
+    transform: translateY(-3px);
+}
+
+.contatos {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 45px;
+}
+
+.contato {
+    color: #2563EB;
+    font-size: 25px;
+    white-space: nowrap;
+}
+
+.botoes-contato {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+}
+
+.botoes-contato a {
+    flex: 0 0 45px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 14px;
+    text-decoration: none;
+    transition: 0.2s;
+}
+
+.botoes-contato img {
+    max-width: 30px;
+    max-height: 27px;
+    width: auto;
+    height: auto;
+    display: block;
+}
+
+.lkdn {
+    background-color: #FED7AA;
+}
+
+.email {
+    background-color: #BFDBFE;
+}
+
+.github {
+    background-color: #DDD6FE;
+}
+
+.botoes-contato a:hover {
+    transform: translateY(-4px) scale(1.04);
+    box-shadow: 0 8px 16px rgba(61, 46, 88, 0.18);
+}

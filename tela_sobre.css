@@ -1,0 +1,168 @@
+/* Configuração geral */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    background-color: #F6F8FA;
+    font-family: "Syne Mono", monospace;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Navegação */
+.navegacao {
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+    padding-top: 45px;
+    margin-bottom: -110px;
+    z-index: 10;
+}
+
+.navegacao a {
+    color: #2563EB;
+    font-size: 22px;
+    text-decoration: none;
+    padding-bottom: 4px;
+    display: inline-block;
+    transition: 0.2s;
+}
+
+.navegacao a:hover {
+    color: #7C3AED;
+    transform: scale(1.08);
+}
+
+.navegacao .ativo {
+    border-bottom: 3px solid #7C3AED;
+}
+
+/* texto sobre */
+h1 {
+    color: #F97316;
+    font-size: 38px;
+    font-weight: bold;
+    margin-bottom: 22px;
+}
+
+p.descricao {
+    color: #000;
+    font-size: 20px;
+    text-decoration: underline;
+    text-decoration-color: #2563EB;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 6px;
+    line-height: 1.8;
+    margin-bottom: 17px;
+    text-align: left;
+}
+
+p.comentario {
+    color: #4B5563;
+    font-size: 17px;
+    white-space: nowrap;
+}
+
+/* Conjunto completo: imagens de um lado e texto do outro */
+.sobre {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 130px;
+    width: 100%;
+    padding: 40px;
+}
+
+/* Conjunto das três imagens */
+.figuras {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Foto principal */
+.foto {
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #7C3AED;
+    position: relative;
+    z-index: 2;
+}
+
+/* Efeitos superior e inferior */
+.efeito {
+    width: 480px;
+    opacity: 0.3;
+    background-color: rgb(255 255 255 / 30%);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    z-index: 1;
+}
+
+.efeito-inferior {
+    transform: rotate(180deg);
+    margin-top: -80px;
+}
+
+.efeito-superior {
+    margin-bottom: -80px;
+}
+
+/* Conjunto dos textos */
+.texto-sobre {
+    width: 650px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 60px;
+}
+
+.botoes-contato {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    margin-top: 30px;
+}
+
+.botoes-contato a {
+    flex: 0 0 45px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 14px;
+    text-decoration: none;
+    transition: 0.2s;
+}
+
+.botoes-contato img {
+    max-width: 30px;
+    max-height: 27px;
+    width: auto;
+    height: auto;
+    display: block;
+}
+
+.lkdn {
+    background-color: #FED7AA;
+}
+
+.email {
+    background-color: #BFDBFE;
+}
+
+.github {
+    background-color: #DDD6FE;
+}
+
+.botoes-contato a:hover {
+    transform: translateY(-4px) scale(1.04);
+    box-shadow: 0 8px 16px rgba(61, 46, 88, 0.18);
+}

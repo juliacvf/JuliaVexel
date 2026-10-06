@@ -1,0 +1,147 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    background-color: #F6F8FA;
+    font-family: "Syne Mono", monospace;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Navegação */
+.navegacao {
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+    padding-top: 45px;
+    margin-bottom: 60px;
+    z-index: 10;
+}
+
+.navegacao a {
+    color: #2563EB;
+    font-size: 22px;
+    text-decoration: none;
+    padding-bottom: 4px;
+    display: inline-block;
+    transition: 0.2s;
+}
+
+.navegacao a:hover {
+    color: #7C3AED;
+    transform: scale(1.08);
+}
+
+.navegacao .ativo {
+    border-bottom: 3px solid #7C3AED;
+}
+
+h1 {
+    color: #F97316;
+    font-size: 38px;
+    font-weight: bold;
+    margin-bottom: 50px;
+}
+
+p.comentario {
+    color: #4B5563;
+    font-size: 17px;
+    margin-bottom: 20px;
+}
+
+p.descricao {
+    color: #4B5563;
+    font-size: 15px;
+}
+
+.selecao-ano {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 18px;
+}
+
+.lista-anos {
+    width: 60%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+    padding: 10px;
+    border: 3px solid #2563EB;
+    border-radius: 50px;
+    background-color: #EFF6FF;
+    overflow-x: auto;
+}
+
+.ano {
+    padding: 12px 45px;
+    border: none;
+    border-radius: 14px;
+    background-color: transparent;
+    color: #4B5563;
+    font-family: "Syne Mono", monospace;
+    font-size: 20px;
+    cursor: pointer;
+    flex-shrink: 0;
+}
+
+.ano-selecionado {
+    background-color: #FED7AA;
+}
+
+.ano:hover {
+    color: #7C3AED;
+    transform: scale(1.08);
+}
+
+.projetos {
+    width: calc(100% - 500px);
+    margin: 40px auto 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.projeto img {
+    width: 250px;
+    height: 160px;
+    object-fit: cover;
+    display: block;
+    margin-top: 3px;
+    margin-bottom: 15px;
+    border-radius: 14px;
+    border: 3px solid #2563EB;
+}
+
+.lista-projetos .projeto a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 320px;
+    height: 280px;
+    border: 3px solid #7C3AED;
+    border-radius: 14px;
+    text-decoration: none;
+}
+
+.lista-projetos .projeto .info-projeto {
+    width: 250px;
+    text-align: left;
+}
+
+.lista-projetos .projeto .info-projeto h2 {
+    color: #2563EB;
+    font-size: 20px;
+    margin-bottom: 7px;
+}
+
+.lista-projetos .projeto a:hover {
+    transform: scale(1.08);
+}

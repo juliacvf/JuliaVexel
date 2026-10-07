@@ -26,6 +26,7 @@ body {
 
 .navegacao a {
     color: #2563EB;
+    font-family: "Bubblegum Sans", sans-serif;
     font-size: 22px;
     text-decoration: none;
     padding-bottom: 4px;
@@ -42,7 +43,7 @@ body {
 
 h1 {
     color: #F97316;
-    font-family: "Syne Mono", monospace;
+    font-family: "Bubblegum Sans", sans-serif;
     font-size: 38px;
     font-weight: bold;
     margin-bottom: 50px;
@@ -139,6 +140,7 @@ p.descricao {
 
 .lista-projetos .projeto .info-projeto h2 {
     color: #2563EB;
+    font-family: "Bubblegum Sans", sans-serif;
     font-size: 20px;
     margin-bottom: 7px;
 }

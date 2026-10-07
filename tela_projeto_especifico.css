@@ -128,10 +128,9 @@ h2 {
     margin-bottom: 10px;
 }
 
-.descricao { font-family: "Syne Mono", monospace; }
-
 .descricao p {
     color: #000;
+    font-family: "Syne Mono", monospace;
     font-size: 20px;
     text-decoration: underline;
     text-decoration-color: #2563EB;

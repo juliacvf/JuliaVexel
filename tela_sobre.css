@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Bubblegum+Sans&family=Syne+Mono&display=swap");
+
 /* Configuração geral */
 * {
     margin: 0;
@@ -8,7 +10,7 @@
 body {
     min-height: 100vh;
     background-color: #F6F8FA;
-    font-family: "Syne Mono", monospace;
+    font-family: "Bubblegum Sans", sans-serif;
     display: flex;
     flex-direction: column;
 }
@@ -49,6 +51,7 @@ h1 {
 
 p.descricao {
     color: #000;
+    font-family: "Syne Mono", monospace;
     font-size: 20px;
     text-decoration: underline;
     text-decoration-color: #2563EB;
@@ -60,6 +63,7 @@ p.descricao {
 
 p.comentario {
     color: #4B5563;
+    font-family: "Syne Mono", monospace;
     font-size: 17px;
     white-space: nowrap;
 }

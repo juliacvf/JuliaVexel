@@ -1,9 +1,11 @@
+@import url("https://fonts.googleapis.com/css2?family=Bubblegum+Sans&family=Syne+Mono&display=swap");
+
 * { margin: 0; padding: 0; box-sizing: border-box; }
 
 body {
     min-height: 100vh;
     background-color: #F6F8FA;
-    font-family: "Syne Mono", monospace;
+    font-family: "Bubblegum Sans", sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -199,7 +201,7 @@ body {
     }
 }
 
-p.ola { color: #4B5563; font-size: 20px; margin-bottom: 50px; }
+p.ola { color: #4B5563; font-family: "Syne Mono", monospace; font-size: 20px; margin-bottom: 50px; }
 
 h1 {
     color: #2563EB;
@@ -262,7 +264,7 @@ p.convite { color: #F97316; font-size: clamp(16px, 1.8vw, 22px); margin-bottom: 
     gap: 45px;
 }
 
-.contato { color: #2563EB; font-size: 25px; white-space: nowrap; }
+.contato { color: #2563EB; font-family: "Syne Mono", monospace; font-size: 25px; white-space: nowrap; }
 
 .botoes-contato {
     display: flex;

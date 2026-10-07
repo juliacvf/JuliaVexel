@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Bubblegum+Sans&display=swap");
+
 * { margin: 0; padding: 0; box-sizing: border-box; }
 
 body {
@@ -203,8 +205,9 @@ p.ola { color: #4B5563; font-size: 20px; margin-bottom: 50px; }
 
 h1 {
     color: #2563EB;
+    font-family: "Bubblegum Sans", sans-serif;
     font-size: clamp(28px, 3.5vw, 40px);
-    font-weight: bold;
+    font-weight: 400;
     min-height: 1.2em;
     margin-bottom: 15px;
 }
@@ -213,6 +216,8 @@ h1 span.nome { color: #F97316; }
 
 h2 {
     color: #000000;
+    font-family: "Bubblegum Sans", sans-serif;
+    font-weight: 400;
     font-size: clamp(25px, 3vw, 35px);
     min-height: 1.2em;
     margin-bottom: 50px;

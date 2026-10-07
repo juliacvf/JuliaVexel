@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Bubblegum+Sans&display=swap");
+
 * {
     margin: 0;
     padding: 0;
@@ -40,8 +42,9 @@ body {
 
 h1 {
     color: #F97316;
+    font-family: "Bubblegum Sans", sans-serif;
     font-size: 38px;
-    font-weight: bold;
+    font-weight: 400;
     margin-bottom: 50px;
 }
 

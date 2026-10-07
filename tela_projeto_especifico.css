@@ -58,11 +58,12 @@ h1 {
 }
 
 h3 {
+    font-family: "Syne Mono", monospace;
     font-size: 27px;
     margin-bottom: 50px;
 }
 
-span.categoria { color: #7C3AED; font-family: "Syne Mono", monospace; }
+span.categoria { color: #7C3AED; }
 span.ano { color: #F97316; }
 span.ponto { color: #4B5563; }
 

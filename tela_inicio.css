@@ -1,8 +1,4 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+* { margin: 0; padding: 0; box-sizing: border-box; }
 
 body {
     min-height: 100vh;
@@ -14,9 +10,7 @@ body {
     padding: 30px;
 }
 
-.notebook {
-    width: min(1180px, 70vw);
-}
+.notebook { width: min(1180px, 70vw); }
 
 .moldura-monitor {
     padding: 16px 16px 45px;
@@ -96,14 +90,9 @@ body {
     transition: 0.2s;
 }
 
-.botao-ligar:hover {
-    color: #7C3AED;
-    transform: scale(1.08);
-}
+.botao-ligar:hover { color: #7C3AED; transform: scale(1.08); }
 
-.botao-ligar:active {
-    transform: scale(0.95);
-}
+.botao-ligar:active { transform: scale(0.95); }
 
 .apresentacao {
     width: 100%;
@@ -131,7 +120,8 @@ body {
     opacity: 1;
     transform: scale(1);
     pointer-events: auto;
-    transition-delay: 0.35s;
+    transition-delay: 0s;
+    transition-duration: 0.2s;
 }
 
 .tela-apagada {
@@ -150,10 +140,7 @@ body {
     transition: opacity 0.35s;
 }
 
-.notebook.ligado .tela-apagada {
-    opacity: 0;
-    transition-delay: 0.25s;
-}
+.notebook.ligado .tela-apagada { opacity: 0; transition-delay: 0s; transition-duration: 0.2s; }
 
 .clarao {
     position: absolute;
@@ -172,9 +159,7 @@ body {
         scaleY(0.01);
 }
 
-.notebook.iniciando .clarao {
-    animation: ligar-tela 0.7s ease-out;
-}
+.notebook.iniciando .clarao { animation: ligar-tela 0.3s ease-out; }
 
 @keyframes ligar-tela {
     0% {
@@ -214,42 +199,30 @@ body {
     }
 }
 
-p.ola {
-    color: #4B5563;
-    font-size: 20px;
-    margin-bottom: 50px;
-}
+p.ola { color: #4B5563; font-size: 20px; margin-bottom: 50px; }
 
 h1 {
     color: #2563EB;
-    font-size: 40px;
+    font-size: clamp(28px, 3.5vw, 40px);
     font-weight: bold;
+    min-height: 1.2em;
     margin-bottom: 15px;
 }
 
-h1 span.nome {
-    color: #F97316;
-}
+h1 span.nome { color: #F97316; }
 
 h2 {
     color: #000000;
-    font-size: 35px;
+    font-size: clamp(25px, 3vw, 35px);
+    min-height: 1.2em;
     margin-bottom: 50px;
 }
 
-h2 span.meu {
-    color: #2563EB;
-}
+h2 span.meu { color: #2563EB; }
 
-h2 span.portifolio {
-    color: #7C3AED;
-}
+h2 span.portifolio { color: #7C3AED; }
 
-p.convite {
-    color: #F97316;
-    font-size: 22px;
-    margin-bottom: 40px;
-}
+p.convite { color: #F97316; font-size: clamp(16px, 1.8vw, 22px); margin-bottom: 40px; }
 
 .navegacao {
     display: flex;
@@ -272,27 +245,13 @@ p.convite {
     transition: 0.2s;
 }
 
-.navegacao .sobre {
-    color: white;
-    background-color: #2563EB;
-}
+.navegacao .sobre { color: white; background-color: #2563EB; }
 
-.navegacao .projetos {
-    color: white;
-    background-color: #F97316;
-}
+.navegacao .projetos { color: white; background-color: #F97316; }
 
-.navegacao .sobre:hover {
-    color: white;
-    background-color: #BFDBFE;
-    transform: translateY(-3px);
-}
+.navegacao .sobre:hover { color: white; background-color: #BFDBFE; transform: translateY(-3px); }
 
-.navegacao .projetos:hover {
-    color: white;
-    background-color: #FED7AA;
-    transform: translateY(-3px);
-}
+.navegacao .projetos:hover { color: white; background-color: #FED7AA; transform: translateY(-3px); }
 
 .contatos {
     width: 100%;
@@ -303,11 +262,7 @@ p.convite {
     gap: 45px;
 }
 
-.contato {
-    color: #2563EB;
-    font-size: 25px;
-    white-space: nowrap;
-}
+.contato { color: #2563EB; font-size: 25px; white-space: nowrap; }
 
 .botoes-contato {
     display: flex;
@@ -336,37 +291,117 @@ p.convite {
     display: block;
 }
 
-.lkdn {
-    background-color: #FED7AA;
+.lkdn { background-color: #FED7AA; }
+
+.email { background-color: #BFDBFE; }
+
+.github { background-color: #DDD6FE; }
+
+.botoes-contato a:hover { transform: translateY(-4px) scale(1.04); box-shadow: 0 8px 16px rgba(61, 46, 88, 0.18); }
+
+@media (max-width: 1450px) {
+    .notebook { width: min(100%, 950px); }
+
+    .tela-notebook { aspect-ratio: auto; }
+
+    .apresentacao { height: auto; padding: clamp(25px, 4vw, 50px); }
+
+    p.ola { margin-bottom: 30px; }
+    h2 { margin-bottom: 35px; }
+    p.convite { margin-bottom: 30px; }
+    .navegacao { margin-bottom: 40px; }
+    .contatos { flex-wrap: wrap; gap: 18px; }
 }
 
-.email {
-    background-color: #BFDBFE;
+@media (max-width: 600px) {
+    body { display: block; padding: 0; }
+
+    .notebook { width: 100%; min-height: 100dvh; }
+
+    .moldura-monitor {
+        min-height: 100dvh;
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+        border: 0;
+        border-radius: 0;
+        box-shadow: none;
+    }
+
+    .tela-notebook {
+        width: 100%;
+        min-height: 100dvh;
+        flex: 1;
+        display: flex;
+        padding: 0;
+        border: 0;
+        border-radius: 0;
+    }
+
+    .apresentacao {
+        min-height: 100dvh;
+        height: auto;
+        flex: 1;
+        justify-content: space-between;
+        align-items: stretch;
+        gap: clamp(28px, 4dvh, 48px);
+        padding: clamp(64px, 8dvh, 100px) 20px 110px;
+        border: 0;
+        border-radius: 0;
+    }
+
+    .base-notebook { display: none; }
+
+    .controles-monitor {
+        position: fixed;
+        top: auto;
+        right: auto;
+        bottom: max(18px, env(safe-area-inset-bottom));
+        left: calc(50% - 22px);
+        width: 44px;
+        height: 44px;
+        transform: none;
+        z-index: 4;
+    }
+
+    .botao-ligar { width: 44px; height: 44px; font-size: 22px; }
+
+    .luz-status {
+        position: fixed;
+        top: max(22px, env(safe-area-inset-top));
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .tela-apagada { inset: 0; border-radius: 0; }
+
+    .clarao { width: 100%; height: 100%; border-radius: 0; }
+
+    .notebook.iniciando .clarao { animation: ligar-celular 0.3s ease-out; }
+
+    p.ola { font-size: 15px; margin-bottom: 120px; }
+    h1 { font-size: clamp(22px, 6vw, 30px); }
+    h2 { font-size: clamp(20px, 5.5vw, 28px); }
+    h1, h2 { min-height: 2.4em; }
+    p.convite { margin-bottom: 0; }
+
+    .navegacao { flex-wrap: wrap; gap: 10px; margin-bottom: 0; }
+
+    .navegacao a {
+        width: auto;
+        min-width: 120px;
+        flex: 1 1 120px;
+        height: 46px;
+        font-size: 15px;
+    }
+
+    .contatos { flex-direction: column; gap: 12px; }
+    .contato { font-size: 20px; }
+    .botoes-contato { gap: 14px; }
 }
 
-.github {
-    background-color: #DDD6FE;
-}
+@keyframes ligar-celular {
+    from { opacity: 0.75; transform: translate(-50%, -50%); }
 
-.botoes-contato a:hover {
-    transform: translateY(-4px) scale(1.04);
-    box-shadow: 0 8px 16px rgba(61, 46, 88, 0.18);
-}
-
-h2 {
-    min-height: 1.2em;
-}
-
-.notebook.ligado .apresentacao {
-    transition-delay: 0s;
-    transition-duration: 0.2s;
-}
-
-.notebook.ligado .tela-apagada {
-    transition-delay: 0s;
-    transition-duration: 0.2s;
-}
-
-.notebook.iniciando .clarao {
-    animation-duration: 0.3s;
+    to { opacity: 0; transform: translate(-50%, -50%); }
 }

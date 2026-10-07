@@ -37,9 +37,7 @@ body {
     transform: scale(1.08);
 }
 
-.navegacao .ativo {
-    border-bottom: 3px solid #7C3AED;
-}
+.navegacao .ativo { border-bottom: 3px solid #7C3AED; }
 
 /* texto sobre */
 h1 {
@@ -58,7 +56,6 @@ p.descricao {
     text-underline-offset: 6px;
     line-height: 1.8;
     margin-bottom: 17px;
-    text-align: left;
 }
 
 p.comentario {
@@ -132,8 +129,8 @@ p.comentario {
 }
 
 .botoes-contato a {
-    flex: 0 0 45px;
-    height: 45px;
+    flex: 0 0 50px;
+    height: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -143,26 +140,103 @@ p.comentario {
 }
 
 .botoes-contato img {
-    max-width: 30px;
-    max-height: 27px;
+    max-width: 40px;
+    max-height: 40px;
     width: auto;
     height: auto;
     display: block;
 }
 
-.lkdn {
-    background-color: #FED7AA;
-}
-
-.email {
-    background-color: #BFDBFE;
-}
-
-.github {
-    background-color: #DDD6FE;
-}
+.lkdn { background-color: #FED7AA; }
+.email { background-color: #BFDBFE; }
+.github { background-color: #DDD6FE; }
 
 .botoes-contato a:hover {
     transform: translateY(-4px) scale(1.04);
     box-shadow: 0 8px 16px rgba(61, 46, 88, 0.18);
+}
+
+
+@media (max-width: 1100px) {
+    .navegacao {
+        gap: 35px;
+        margin-bottom: 0;
+    }
+
+    .sobre {
+        gap: 40px;
+        padding: 40px 32px;
+    }
+
+    .foto {
+        width: 260px;
+        height: 260px;
+    }
+
+    .efeito { width: 330px; }
+
+    .texto-sobre {
+        width: auto;
+        min-width: 0;
+        flex: 1;
+        margin-top: 0;
+    }
+
+    p.comentario { white-space: normal; }
+}
+
+@media (max-width: 900px) {
+    .sobre {
+        flex-direction: column;
+        gap: 25px;
+    }
+
+    .texto-sobre { width: min(650px, 100%); }
+}
+
+@media (max-width: 600px) {
+    .navegacao {
+        flex-wrap: wrap;
+        gap: 10px 18px;
+        padding: 24px 12px 0;
+    }
+
+    .navegacao a {
+        font-size: clamp(15px, 4vw, 19px);
+    }
+
+    .sobre {
+        padding: 30px 20px 50px;
+    }
+
+    .texto-sobre { margin-top: -20px; }
+
+    .foto {
+        width: min(220px, 65vw);
+        height: auto;
+        aspect-ratio: 1;
+    }
+
+    .efeito { width: min(300px, 85vw); }
+    .efeito-superior { margin-bottom: -50px; }
+    .efeito-inferior { margin-top: -50px; }
+    h1 { font-size: clamp(28px, 7vw, 38px); }
+
+    p.descricao {
+        font-size: 17px;
+        line-height: 1.6;
+        text-align: justify;
+        hyphens: auto;
+    }
+
+    p.comentario {
+        font-size: 15px;
+        overflow-wrap: anywhere;
+    }
+
+    .botoes-contato {
+        width: 100%;
+        justify-content: center;
+        margin-top: 50px;
+    }
 }

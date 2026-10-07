@@ -36,9 +36,7 @@ body {
     transform: scale(1.08);
 }
 
-.navegacao .ativo {
-    border-bottom: 3px solid #7C3AED;
-}
+.navegacao .ativo { border-bottom: 3px solid #7C3AED; }
 
 h1 {
     color: #F97316;
@@ -91,9 +89,7 @@ p.descricao {
     flex-shrink: 0;
 }
 
-.ano-selecionado {
-    background-color: #FED7AA;
-}
+.ano-selecionado { background-color: #FED7AA; }
 
 .ano:hover {
     color: #7C3AED;
@@ -142,6 +138,65 @@ p.descricao {
     margin-bottom: 7px;
 }
 
-.lista-projetos .projeto a:hover {
-    transform: scale(1.08);
+.lista-projetos .projeto a:hover { transform: scale(1.08); }
+
+
+@media (max-width: 800px) {
+    .navegacao {
+        gap: 30px;
+        margin-bottom: 45px;
+    }
+
+    .lista-anos,
+    .projetos {
+        width: calc(100% - 48px);
+    }
+}
+
+@media (max-width: 600px) {
+    .navegacao {
+        flex-wrap: wrap;
+        gap: 10px 18px;
+        padding: 24px 12px 0;
+        margin-bottom: 35px;
+    }
+
+    .navegacao a { font-size: clamp(15px, 4vw, 19px); }
+
+    .lista-anos,
+    .projetos {
+        width: calc(100% - 32px);
+    }
+
+    .ano {
+        padding: 10px 24px;
+        font-size: 17px;
+    }
+
+    .projetos { margin-top: 30px; }
+
+    .lista-projetos {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-items: center;
+        gap: 24px;
+    }
+
+    .lista-projetos .projeto { width: min(320px, 100%); }
+
+    .lista-projetos .projeto a {
+        width: 100%;
+        height: auto;
+        min-height: 280px;
+        padding: 14px;
+    }
+
+    .projeto img {
+        width: min(250px, 100%);
+        height: auto;
+        aspect-ratio: 250 / 160;
+    }
+
+    .lista-projetos .projeto .info-projeto { width: min(250px, 100%); }
 }
